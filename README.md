@@ -2,6 +2,8 @@
 
 I tried to make the two configs pretty much the same, but still no luck.
 
+Run `npm i` first.
+
 Rspack works:
 
 `npm run build:rspack`
