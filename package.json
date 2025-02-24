@@ -1,0 +1,21 @@
+{
+  "name": "repro-rsbuild",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:rsbuild && npm run build:rspack",
+    "build:rsbuild": "rsbuild build",
+    "build:rspack": "rspack build",
+    "check": "biome check --write",
+    "format": "biome format --write"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@rsbuild/core": "^1.2.8",
+    "@rspack/cli": "^1.2.5",
+    "@rspack/core": "^1.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
